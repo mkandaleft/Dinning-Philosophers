@@ -9,32 +9,18 @@ Below are the classes and relevant variables/methods:
 
 DiningPhilosophers:
 
-  -Iterations (number of cycle for each philosopher)
-  -static monitor
-  -user input (number of philosophers)
+  -Iterations (number of cycles) / static monitor / user input (number of philosophers)
 
-  -main()
-  -reportException()
+  -main() / reportException()
   
 Philosopher extends Thread:
 
-  -Thread ID (TID)
-  -thread sleep (SLEEPY_TIME)
-  -static count
+  -Thread ID (TID) / thread sleep (SLEEPY_TIME) / static count
   
-  -run()
-  -eat()
-  -talk()
-  -think()
+  -run() / eat() / talk() / think()
   
 Monitor:
 
-  -numPhilosophers (That have access to monitor)
-  -STATE enum (THINKING, EATING, WAITING)
-  -WAITING PriorityQueue
-  -talking boolean (mutual exclusion)
+  -numPhilosophers (with access to monitor) / STATE enum / WAITING PriorityQueue / talking boolean (mutual exclusion)
   
-  -PickUp()
-  -putDown()
-  -requestTalk()
-  -endTalk()
+  -PickUp() / putDown() / requestTalk() / endTalk()
