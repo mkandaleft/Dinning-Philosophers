@@ -92,12 +92,16 @@ public class DiningPhilosophers {
  
             System.out.println (philosophers + " philosopher(s) came in for chinese supper.");
  
+            long startTime = System.currentTimeMillis();
+         
             // Join allows main to wait until all philosophers are finished iterating 
             for(int i = 0; i < philosophers; i++)
                 philoArr[i].join();
  
+            long endTime = System.currentTimeMillis();
+         
             System.out.println("\nAll philosophers ate and spoke to satisfaction.\n" 
-            + "System safely terminating.");
+            + "System safely terminating.\nThe dinner lasted " + (endTime - startTime) + " milliseconds");
         }
         catch(InterruptedException e) {
             System.err.println("Error in main:");
